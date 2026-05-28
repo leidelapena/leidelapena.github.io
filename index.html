@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="tl">
 <head>
-    <title>Ang Aking Unang Website</title>
+    <meta charset="UTF-8">
+    <title>Ang Aking Personal na Website</title>
+    <style>
+        /* CSS: Dito nakalagay ang disenyo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6; /* Banayad na gray/green background */
+            color: #333;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 0 auto;
+        }
+        h1 { color: #2c3e50; }
+        p { font-size: 18px; line-height: 1.6; }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Gagawing pabilog ang larawan */
+            object-fit: cover;
+            border: 4px solid #3498db;
+            margin-top: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .btn:hover { background-color: #2980b9; }
+    </style>
 </head>
 <body>
-    <h1>Mabuhay! Welcome sa aking website.</h1>
-    <p>Ginawa ko ito gamit ang GitHub Pages!</p>
+
+    <div class="container">
+        <!-- Palitan ang profile.jpg kung iba ang pangalan ng inupload mong larawan -->
+        <img src="profile.jpg" alt="Aking Larawan">
+        
+        <h1>Mabuhay! Welcome sa aking website.</h1>
+        <p>Ako si Lei. Isang malaking hakbang ang matutong gumawa ng website gamit ang GitHub Pages! Subaybayan ang aking paglalakbay.</p>
+        
+        <!-- Link papunta sa pangalawang pahina -->
+        <a href="about.html" class="btn">Kilalanin Ako Nang Mas Lubos</a>
+    </div>
+
 </body>
 </html>
