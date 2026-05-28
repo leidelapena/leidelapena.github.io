@@ -4,57 +4,78 @@
     <meta charset="UTF-8">
     <title>Ang Aking Personal na Website</title>
     <style>
-        /* CSS: Dito nakalagay ang disenyo */
+        /* CSS: Dark Mode Theme */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6; /* Banayad na gray/green background */
-            color: #333;
+            background-color: #121212; /* Madilim na background */
+            color: #e0e0e0; /* Puting teksto */
             text-align: center;
             padding: 50px 20px;
             margin: 0;
         }
         .container {
             max-width: 600px;
-            background: white;
+            background: #1e1e1e; /* Mas madilim na kahon */
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
             margin: 0 auto;
         }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; line-height: 1.6; }
+        h1 { color: #ffffff; }
+        p { font-size: 18px; line-height: 1.6; color: #b0b0b0; }
         img {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Gagawing pabilog ang larawan */
+            border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #3498db;
+            border: 4px solid #bb86fc; /* Purple accent para sa dark mode */
             margin-top: 15px;
         }
         .btn {
             display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
+            background-color: #bb86fc;
+            color: #121212;
+            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 25px;
+            margin-top: 25px;
             font-weight: bold;
         }
-        .btn:hover { background-color: #2980b9; }
+        .btn:hover { background-color: #9965df; }
+        
+        /* Social Media Section */
+        .social-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+        .social-links a {
+            color: #03dac6; /* Cyan accent for links */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .social-links a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Palitan ang profile.jpg kung iba ang pangalan ng inupload mong larawan -->
         <img src="IMG_8649.jpeg" alt="Aking Larawan">
         
         <h1>Mabuhay! Welcome sa aking website.</h1>
         <p>Ako si Lei. Isang malaking hakbang ang matutong gumawa ng website gamit ang GitHub Pages! Subaybayan ang aking paglalakbay.</p>
         
-        <!-- Link papunta sa pangalawang pahina -->
         <a href="about.html" class="btn">Kilalanin Ako Nang Mas Lubos</a>
+
+        <!-- Social Media Links (Palitan mo ang mga '#' ng totoong link ng iyong profile) -->
+        <div class="social-links">
+            <p style="font-size: 14px; margin-bottom: 10px;">I-follow ako sa:</p>
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://github.com" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
     </div>
 
 </body>
