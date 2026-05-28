@@ -2,39 +2,97 @@
 <html lang="tl">
 <head>
     <meta charset="UTF-8">
-    <title>Tungkol sa Akin</title>
+    <title>Tungkol sa Akin & Contact</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6;
+            background-color: #121212;
+            color: #e0e0e0;
             text-align: center;
             padding: 50px 20px;
         }
         .container {
             max-width: 600px;
-            background: white;
+            background: #1e1e1e;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
             margin: 0 auto;
         }
-        h1 { color: #2c3e50; }
-        p { font-size: 18px; text-align: left; }
+        h1, h2 { color: #ffffff; }
+        p { font-size: 16px; text-align: left; color: #b0b0b0; }
+        hr { border: 0; border-top: 1px solid #333; margin: 20px 0; }
+        
+        /* Contact Form Styles */
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #bb86fc;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: white;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            border-color: #03dac6;
+            outline: none;
+        }
+        button {
+            background-color: #03dac6;
+            color: #121212;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+        button:hover { background-color: #01b09e; }
+        
         .back-btn {
             display: inline-block;
-            margin-top: 20px;
-            color: #3498db;
+            margin-top: 25px;
+            color: #bb86fc;
             text-decoration: none;
         }
+        .back-btn:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Tungkol sa Akin</h1>
-        <hr>
         <p><strong>Mga Interes ko:</strong> Pag-co-code, pagbabasa, at pagtuklas ng mga bagong teknolohiya.</p>
         <p><strong>Layunin:</strong> Gumawa ng mga kapaki-pakinabang na proyekto na makatutulong sa komunidad.</p>
+        
+        <hr>
+        
+        <h2>Mag-iwan ng Mensahe</h2>
+        <!-- Formspree contact form setup -->
+        <form action="https://formspree.io" method="POST">
+            <label>Iyong Pangalan:</label>
+            <input type="text" name="name" required placeholder="Juan Dela Cruz">
+            
+            <label>Iyong Email:</label>
+            <input type="email" name="email" required placeholder="juan@email.com">
+            
+            <label>Mensahe:</label>
+            <textarea name="message" rows="4" required placeholder="Isulat dito ang iyong mensahe..."></textarea>
+            
+            <button type="submit">Ipadala ang Mensahe</button>
+        </form>
         
         <a href="index.html" class="back-btn">← Bumalik sa Home</a>
     </div>
